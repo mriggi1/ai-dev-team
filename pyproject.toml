@@ -1,0 +1,17 @@
+[project]
+name = "ai-dev-team"
+version = "0.1.0"
+description = "Local multi-agent software engineering assistant built with LangGraph and Ollama."
+readme = "README.md"
+authors = [
+    { name = "Maria Eugenia Riggi", email = "mriggi1@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+ai-dev-team = "ai_dev_team:main"
+
+[build-system]
+requires = ["uv_build>=0.12.11,<0.13.0"]
+build-backend = "uv_build"
