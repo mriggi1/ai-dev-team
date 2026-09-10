@@ -3,20 +3,30 @@ Application entry point.
 """
 
 from ai_dev_team.agents.developer import DeveloperAgent
+from ai_dev_team.agents.planner import PlannerAgent
 from ai_dev_team.llm.provider import LLMProvider
 
 
 def main() -> None:
     provider = LLMProvider()
 
+    planner = PlannerAgent(provider)
     developer = DeveloperAgent(provider)
 
-    task = "Write a Python function that returns the factorial of a number."
+    task = "Create a REST API for managing books."
 
-    result = developer.run(task)
+    print("\n=== USER REQUEST ===\n")
+    print(task)
 
-    print("\nGenerated solution:\n")
-    print(result)
+    plan = planner.run(task)
+
+    print("\n=== IMPLEMENTATION PLAN ===\n")
+    print(plan)
+
+    code = developer.run(plan)
+
+    print("\n=== GENERATED CODE ===\n")
+    print(code)
 
 
 if __name__ == "__main__":

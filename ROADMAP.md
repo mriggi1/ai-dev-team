@@ -38,16 +38,17 @@
 ## Sprint 4
 
 - PlannerAgent
-- Multi-agent workflow
-- LangGraph integration
+- Planner prompt
+- Multi-agent flow:
+  User request → PlannerAgent → DeveloperAgent
+- Improved communication between agents
 
----
+✅ Completed
 
 ## Sprint 5
 
 - ReviewerAgent
-- Review loop
-- Code improvement workflow
+- Code review workflow
 
 ---
 
@@ -55,4 +56,14 @@
 
 - TesterAgent
 - Automatic test generation
-- Complete AI development pipeline
+- Complete development pipeline
+
+---
+
+## Sprint 7
+
+- LangGraph integration
+- Workflow state management
+- Agent graph orchestration
+- Refactor manual orchestration into graph-based workflow
+
