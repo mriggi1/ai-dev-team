@@ -1,74 +1,58 @@
-\## Sprint 1
+# Roadmap
 
+## Sprint 1
 
-
-\- Environment
-
-\- Ollama
-
-\- Continue
-
-
+- Python environment
+- UV package manager
+- Ollama installation
+- Project setup
 
 ✅ Completed
 
+---
 
+## Sprint 2
 
-\---
+- Professional project structure
+- Git repository
+- Initial documentation
+- First commit
 
+✅ Completed
 
+---
 
-\## Sprint 2
+## Sprint 3
 
+- LLMProvider
+- BaseAgent
+- DeveloperAgent
+- Developer prompt
+- End-to-end execution
+- Commit: `feat: add developer agent`
 
+✅ Completed
 
-\- Project skeleton
+---
 
+## Sprint 4
 
+- PlannerAgent
+- Multi-agent workflow
+- LangGraph integration
 
-\---
+---
 
+## Sprint 5
 
+- ReviewerAgent
+- Review loop
+- Code improvement workflow
 
-\## Sprint 3
+---
 
+## Sprint 6
 
-
-Developer Agent
-
-
-
-\---
-
-
-
-\## Sprint 4
-
-
-
-Planner Agent
-
-
-
-\---
-
-
-
-\## Sprint 5
-
-
-
-Reviewer Agent
-
-
-
-\---
-
-
-
-\## Sprint 6
-
-
-
-Tester Agent
-
+- TesterAgent
+- Automatic test generation
+- Complete AI development pipeline
