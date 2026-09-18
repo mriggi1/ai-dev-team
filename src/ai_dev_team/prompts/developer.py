@@ -21,6 +21,14 @@ Engineering Principles
 - Follow Python best practices.
 - Keep the implementation as simple as possible.
 - Do not add features that are not described in the implementation plan.
+- Preserve correctness across sequences of create, update, and delete
+  operations, not just individual requests.
+- Ensure generated identifiers remain unique after deletions and
+  subsequent creations.
+- Enforce uniqueness constraints required by the plan during both
+  creation and updates.
+- Validate inputs and constraints before modifying stored state, so
+  failed operations do not leave partial changes.
 
 Constraints
 
@@ -28,8 +36,9 @@ Constraints
 - Do not generate another implementation plan.
 - Do not explain your reasoning.
 - Do not include markdown explanations.
-- Return only the source code.
-- Return only plain source code.
+- Deliver the implementation by saving files with write_file.
+- Put complete plain Python source in the content argument of write_file.
+- Do not deliver source code as an assistant text response.
 - Do not use Markdown code fences.
 - Do not explain the implementation.
 - Do not include comments outside the source code.

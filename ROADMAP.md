@@ -39,18 +39,30 @@
 
 - PlannerAgent
 - Planner prompt
-- Multi-agent flow:
+- Implementation plan passed as input to DeveloperAgent
+- Manual orchestration:
   User request → PlannerAgent → DeveloperAgent
-- Improved communication between agents
 
 ✅ Completed
 
 ## Sprint 5
 
-- ReviewerAgent
-- Code review workflow
+- ReviewerAgent and reviewer prompt
+- Code review against the implementation plan
+- Developer revision based on review findings
+- Manual workflow:
+  Planner → Developer → Reviewer → Developer revision
+- Ollama tool-calling support in LLMProvider
+- Developer tool loop:
+  - List, read, and write Python files
+  - Check syntax and static analysis, then correct reported errors using tool results
+  - Limit execution iterations and file access
+- Generated projects stored in isolated generated/ directories
+- Execution time reporting for Planner, Developer, and Reviewer
+- Automated tests for developer tools and correction flow
+- Automatic revision cycle after ReviewerAgent findings
 
----
+✅ Completed
 
 ## Sprint 6
 
